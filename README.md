@@ -2,6 +2,7 @@
 
 Static marketing site (Astro) for Coursed, deployed to Cloudflare as the `coursed-www` project.
 Isolated from the app Worker (`wye-stars`), which runs the boards, ops, billing, and APIs.
+<!-- Cloudflare Workers Builds connected: pushes to main auto-deploy. -->
 
 ## Deploy
 Connected to this GitHub repo via Cloudflare Workers Builds:
