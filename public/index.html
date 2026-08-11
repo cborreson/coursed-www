@@ -714,7 +714,7 @@
     return '<div class="rung"><span class="idx num">'+(i+1)+'</span><div class="star">'+STAR+'</div><h4>'+r.name+'</h4><div class="thr num">'+r.thr+'</div></div>';
   }).join('');
 
-  var API_BASE="https://getcoursed.com"; // app API origin — preview: current worker; after apex cutover change to https://app.getcoursed.com
+  var API_BASE="https://app.getcoursed.com"; // app API origin (post-cutover: apex serves marketing, app.* serves the worker/API)
   // ---- attribution + conversion tracking ----
   function qp(k){try{return new URLSearchParams(location.search).get(k)||'';}catch(_){return '';}}
   var ATTR={src:qp('src')||qp('utm_source')||'',campaign:qp('utm_campaign')||qp('campaign')||'',landing:location.pathname};
