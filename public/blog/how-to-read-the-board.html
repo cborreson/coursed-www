@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1QW8EM6ZK0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1QW8EM6ZK0');</script>
+<title>How to read the board: a manager's guide to the live service scoreboard — Coursed</title>
+<meta name="description" content="A practical guide to reading a live service board during a shift — card anatomy, the six-step service ladder, what each color and flag means, and what to do about them.">
+<link rel="canonical" href="https://getcoursed.com/blog/how-to-read-the-board">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://getcoursed.com/blog/how-to-read-the-board">
+<meta property="og:title" content="How to read the board: a manager's guide to the live service scoreboard">
+<meta property="og:description" content="Card anatomy, the six-step service ladder, what each flag means, and how to run the floor from one screen.">
+<meta property="og:image" content="https://getcoursed.com/assets/coursed-board-on-the-pass.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to read the board: a manager's guide to the live service scoreboard">
+<meta name="twitter:description" content="A practical guide to reading a live service board during a shift.">
+<meta name="twitter:image" content="https://getcoursed.com/assets/coursed-board-on-the-pass.webp">
+<link rel="icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0F0D0B;--panel:#1C1815;--panel2:#241F1A;--line:#3A322B;--ink:#F6EFE4;--muted:#B3A897;--faint:#7C7266;--gold:#F0B429;--good:#3FAE8F;--risk:#D1553F;--dessert:#A678D6;--maxw:1120px}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.7}
+  a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:14px 22px;font-weight:800;font-size:15px;font-family:inherit;cursor:pointer;transition:.16s;min-height:44px}
+  .btn-gold{background:var(--gold);color:#171310}.btn-gold:hover{box-shadow:0 8px 30px -8px rgba(240,180,41,.55);transform:translateY(-1px);text-decoration:none}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold);text-decoration:none}
+  .btn-sm{padding:8px 14px;font-size:14px;border-radius:9px;min-height:0}
+  a:focus-visible,.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  nav{position:sticky;top:0;z-index:20;background:rgba(15,13,11,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--ink)}
+  .logo svg{width:26px;height:26px}.logo:hover{text-decoration:none}
+  .navlinks{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600}
+  .navlinks a{color:var(--muted)}.navlinks a:hover{color:var(--ink)}
+  .navlinks a.btn-gold{color:#171310}
+  article{max-width:720px;margin:0 auto;padding:48px 24px 8px}
+  .crumb{font-size:14px;font-weight:600;color:var(--faint);margin-bottom:20px}
+  .crumb a{color:var(--muted)}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  h1{font-size:clamp(30px,4.6vw,44px);line-height:1.12;font-weight:800;letter-spacing:-.02em;margin:0 0 16px}
+  .meta{color:var(--faint);font-size:14px;font-weight:600;margin-bottom:28px}
+  .lead{font-size:20px;color:var(--muted);margin:0 0 8px}
+  .shot{border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:28px 0}
+  .shot img{display:block;width:100%;height:auto}
+  .shot .cap{padding:12px 18px;background:var(--panel);color:var(--faint);font-size:13.5px;border-top:1px solid var(--line)}
+  article h2{font-size:26px;font-weight:800;letter-spacing:-.01em;margin:40px 0 10px}
+  article h3{font-size:19px;font-weight:800;margin:26px 0 6px}
+  article p{color:var(--muted);font-size:17px;margin:0 0 18px}
+  article p b,article li b{color:var(--ink);font-weight:700}
+  article ul,article ol{color:var(--muted);font-size:17px;margin:0 0 18px;padding-left:22px}
+  article li{margin-bottom:8px}
+  .callout{border-left:3px solid var(--gold);background:var(--panel);border-radius:0 12px 12px 0;padding:16px 20px;margin:24px 0;color:var(--ink);font-size:16.5px}
+  .ladder{list-style:none;padding:0;margin:18px 0 22px;counter-reset:rung}
+  .ladder li{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:16.5px}
+  .ladder li:last-child{border-bottom:0}
+  .ladder .n{counter-increment:rung;flex:none;width:30px;height:30px;border-radius:8px;background:var(--panel2);border:1px solid var(--line);color:var(--gold);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .ladder .n::before{content:counter(rung)}
+  .ladder b{color:var(--ink)}
+  .flag{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+  .flag:last-child{border-bottom:0}
+  .dot{flex:none;width:14px;height:14px;border-radius:50%;margin-top:6px}
+  .dot.red{background:var(--risk)}.dot.amber{background:var(--gold)}.dot.good{background:var(--good)}.dot.purple{background:var(--dessert)}
+  .flag div{color:var(--muted);font-size:16.5px}.flag b{color:var(--ink)}
+  .cta{max-width:720px;margin:44px auto 0;background:linear-gradient(180deg,#2a2113,var(--panel));border:1px solid var(--gold);border-radius:20px;padding:30px;text-align:center}
+  .cta h2{font-size:24px;margin:0 0 8px}.cta p{color:var(--muted);margin:0 auto 20px;max-width:52ch;font-size:16.5px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--faint);font-size:14px;margin-top:44px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  footer .mark{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:800}footer .mark:hover{text-decoration:none}
+  footer .mark svg{width:22px;height:22px}
+  @media(max-width:820px){.navlinks a:not(.btn){display:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to read the board: a manager's guide to the live service scoreboard","description":"A practical guide to reading a live service board during a shift — card anatomy, the six-step service ladder, what each color and flag means, and what to do about them.","image":"https://getcoursed.com/assets/coursed-board-on-the-pass.webp","datePublished":"2026-08-11","dateModified":"2026-08-11","author":{"@type":"Organization","name":"Coursed"},"publisher":{"@type":"Organization","name":"Coursed","logo":{"@type":"ImageObject","url":"https://getcoursed.com/favicon.svg"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://getcoursed.com/blog/how-to-read-the-board"}}
+</script>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="/"><svg viewBox="0 0 168 160" aria-hidden="true"><path d="M116.7 92.35A50 50 0 1 1 116.7 67.65" fill="none" stroke="#F0B429" stroke-width="13" stroke-linecap="round"/><polygon points="109,64.5 110.9,69.39 116.13,69.68 112.07,73 113.41,78.07 109,75.22 104.59,78.07 105.93,73 101.87,69.68 107.1,69.39" fill="#F0B429"/></svg>Coursed</a>
+  <div class="navlinks">
+    <a href="/blog/">Blog</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/faq">FAQ</a>
+    <a class="btn btn-gold btn-sm" href="/?src=blog#pilot" data-cta="pilot-nav-blog">Apply for a pilot</a>
+  </div>
+</div></nav>
+
+<article>
+  <div class="crumb"><a href="/blog/">← Blog</a></div>
+  <div class="eyebrow">Running the floor</div>
+  <h1>How to read the board</h1>
+  <div class="meta">A manager's guide to the live service scoreboard · 6 min read</div>
+  <p class="lead">A service board only helps if the team can read it in a glance between two tables. Here's what every number, color, and flag means — and, more importantly, what to do about it while the guest is still in the building.</p>
+
+  <div class="shot">
+    <img src="/assets/coursed-board-on-the-pass.webp" alt="The Coursed live service scoreboard mounted above a restaurant pass during dinner service" loading="lazy">
+    <div class="cap">Every active table on one screen, climbing the same ladder in real time.</div>
+  </div>
+
+  <h2>Start with the card</h2>
+  <p>Each table on the floor is one card. Read left to right, top to bottom, it tells you everything you need in about a second:</p>
+  <ul>
+    <li><b>Table and server</b> — which table this is and who's on it, so a glance turns into a name you can coach.</li>
+    <li><b>The score, out of six</b> — how many rungs of the service ladder this table has hit for its guest count. A full row of stars is a table getting the whole experience; a low number is a table missing courses.</li>
+    <li><b>Spend per guest</b> — the check total divided by covers. It's a fast read on whether a table is being <em>sold to</em>, not just served.</li>
+    <li><b>Guest count</b> — because every threshold on the ladder is per guest. A two-top and a ten-top are held to the same standard, scaled to the room.</li>
+  </ul>
+  <p>The score isn't a grade on the server's personality. It's a count of what actually got rung in against what a full experience looks like for that many guests. That's the whole point: it's built from the order data, not from someone's opinion of the shift.</p>
+
+  <h2>The six-step ladder</h2>
+  <p>Tables are scored against a service ladder — the arc a great table moves through from sit-down to dessert. Each rung is a per-guest threshold. Here's the default; the rungs and thresholds are yours to tune per shift, because a Tuesday lunch and a Saturday tasting menu don't run the same.</p>
+  <ol class="ladder">
+    <li><span class="n"></span><div><b>First round</b> — a drink in front of every guest. The clock on hospitality starts here.</div></li>
+    <li><span class="n"></span><div><b>Apps</b> — roughly an app for every guest or two. Did anyone offer a start, or did the table go straight to entrées?</div></li>
+    <li><span class="n"></span><div><b>Second round</b> — drinks turned before glasses ran dry.</div></li>
+    <li><span class="n"></span><div><b>Entrées</b> — an entrée per guest. The core of the meal landed.</div></li>
+    <li><span class="n"></span><div><b>Third round</b> — the table's still being taken care of deep into the meal, not forgotten.</div></li>
+    <li><span class="n"></span><div><b>Dessert</b> — the offer that most tables never get. This rung is where check averages are won or lost.</div></li>
+  </ol>
+  <div class="callout">The ladder isn't about rushing a table — it's about making sure nothing gets <b>skipped</b>. A table can be relaxed and unhurried and still hit every rung. What you're watching for is the table that quietly missed the app course, or was never offered a second round, or walked without ever hearing about dessert.</div>
+
+  <h2>Colors and flags: what to do, not just what they mean</h2>
+  <p>Scores tell you where a table <em>is</em>. Flags tell you where to <em>walk</em>. Read them in this order:</p>
+
+  <div class="flag"><span class="dot red"></span><div><b>Red — a table is slipping.</b> A pace flag fires when a table has gone too long without the next thing it needs (no first round after several minutes, a stall between courses). This is the one you act on first: walk to that table while the guests are still there and you can still fix it. Red on the board is a recovery you can still make, not a post-mortem.</div></div>
+
+  <div class="flag"><span class="dot red"></span><div><b>A slowly pulsing card — the table's gone quiet.</b> No new item has fired in a while on an open table. Usually it means they're done and ready for the check, or they're waiting on someone. Either way it's a table to touch: close it out, or find out what they're waiting for before it becomes a complaint.</div></div>
+
+  <div class="flag"><span class="dot amber"></span><div><b>Amber warning — check the cover count.</b> When a table shows more entrées than guests, the guest count was probably entered low. It's worth a look, because an undercounted table makes every per-guest threshold trivially easy and quietly distorts the shift.</div></div>
+
+  <div class="flag"><span class="dot amber"></span><div><b>Amber "fast turn" notice — a table closed unusually quickly.</b> Not a trophy — a prompt. A very fast close can be a great quick lunch, or it can be a walkout, a comp, or a party that got cut short. Glance at it and know which.</div></div>
+
+  <div class="flag"><span class="dot good"></span><div><b>A full board of high scores — leave it alone.</b> The board's real job is to let you <em>stop</em> walking the whole room looking for trouble. When everything's green and climbing, that's your signal the floor is handling itself and your attention is free for the one table that isn't.</div></div>
+
+  <h2>How to actually run a shift off it</h2>
+  <p>The habit is simple and it's the same every service:</p>
+  <ol>
+    <li><b>Red first.</b> Anything flagged is a table you can still save. Handle those before you do anything else.</li>
+    <li><b>Then the low scores.</b> Scan for tables sitting two or three rungs behind the room. That's usually a missed course you can still offer — an app, a second round, dessert.</li>
+    <li><b>Then leave the greens alone.</b> The point isn't to hover. It's to spend your attention where it changes the guest's night.</li>
+  </ol>
+  <p>And after the shift, the same board becomes the coaching tool. Pull up any past date and walk a server through their tables — not from memory or a vibe, but from what actually happened, table by table. "Here are the four tables where we never offered dessert" is a conversation that changes next Friday. "You seemed off tonight" isn't.</p>
+
+  <div class="callout">One screen on the pass for the team to rally around, one in the back for the manager to coach from. Same data, two jobs. The board on the wall keeps the standard visible in the moment; the manager view makes it repeatable.</div>
+
+  <h2>The one-glance test</h2>
+  <p>You'll know the board is doing its job when you can walk past it, take it in without stopping, and know instantly whether the floor needs you. Mostly green and climbing: keep doing what you're doing. A cluster of red or a row of stalled tables: you've got a walk to take — and you caught it while it still mattered.</p>
+</article>
+
+<div class="cta">
+  <div class="eyebrow" style="color:var(--gold)">See it on your floor</div>
+  <h2>Watch it run on real service.</h2>
+  <p>Coursed turns your POS order activity into this board — live, on your own tables. Apply for a 30-day pilot on your own data; no card before setup.</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="/?src=blog#pilot" data-cta="pilot-blog-post">Apply for a pilot</a>
+    <a class="btn btn-ghost" href="/?src=blog#demo" data-cta="demo-blog-post">Watch a live demo</a>
+  </div>
+</div>
+
+<footer><div class="wrap">
+  <a class="mark" href="/"><svg viewBox="0 0 168 160" aria-hidden="true"><path d="M116.7 92.35A50 50 0 1 1 116.7 67.65" fill="none" stroke="#F0B429" stroke-width="13" stroke-linecap="round"/><polygon points="109,64.5 110.9,69.39 116.13,69.68 112.07,73 113.41,78.07 109,75.22 104.59,78.07 105.93,73 101.87,69.68 107.1,69.39" fill="#F0B429"/></svg>Coursed</a>
+  <span>© 2026 Coursed · <a href="/blog/">Blog</a> · <a href="/faq">FAQ</a> · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a></span>
+</div></footer>
+
+<script>
+  function track(name,meta){try{meta=meta||{};window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:name},meta));if(typeof window.gtag==='function')window.gtag('event',name,meta);}catch(_){}}
+  track('page_meta',{page:'blog_post',slug:'how-to-read-the-board'});
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-cta]');if(a)track('cta_click',{cta:a.getAttribute('data-cta')});});
+</script>
+</body></html>
