@@ -1,0 +1,10 @@
+{
+  // Coursed marketing site — static assets served by Cloudflare.
+  // Connected to the GitHub repo so a push auto-builds (npm run build -> dist) and deploys.
+  "name": "coursed-www",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
