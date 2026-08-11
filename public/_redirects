@@ -1,0 +1,7 @@
+# Legacy apex paths now live on the app subdomain (post-cutover).
+/login          https://app.getcoursed.com/                302
+/ops            https://app.getcoursed.com/ops             302
+/ops/*          https://app.getcoursed.com/ops/:splat      302
+/signup         https://app.getcoursed.com/signup          302
+/signup/*       https://app.getcoursed.com/signup/:splat   302
+/api/*          https://app.getcoursed.com/api/:splat      307
