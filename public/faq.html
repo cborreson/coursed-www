@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1QW8EM6ZK0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-1QW8EM6ZK0');</script>
+<title>Coursed — Frequently asked questions</title>
+<meta name="description" content="Answers about Coursed: what it is, which POS it works with, how the read-only connection works, what it reads and never changes, security, pricing, and pilot terms.">
+<link rel="canonical" href="https://getcoursed.com/faq">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://getcoursed.com/faq">
+<meta property="og:title" content="Coursed — Frequently asked questions">
+<meta property="og:description" content="What Coursed is, how it connects to your POS, what it reads and never changes, security, pricing, and pilot terms.">
+<meta property="og:image" content="https://getcoursed.com/assets/coursed-board-on-the-pass.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Coursed — Frequently asked questions">
+<meta name="twitter:description" content="Answers about Coursed: POS connection, what it reads, security, pricing, and pilot terms.">
+<link rel="icon" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0F0D0B;--panel:#1C1815;--panel2:#241F1A;--line:#3A322B;--ink:#F6EFE4;--muted:#B3A897;--faint:#7C7266;--gold:#F0B429;--good:#3FAE8F;--risk:#D1553F;--maxw:1120px}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope",system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+  a{color:var(--gold);text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:14px 22px;font-weight:800;font-size:15px;font-family:inherit;cursor:pointer;transition:.16s;min-height:44px}
+  .btn-gold{background:var(--gold);color:#171310}.btn-gold:hover{box-shadow:0 8px 30px -8px rgba(240,180,41,.55);transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-sm{padding:8px 14px;font-size:14px;border-radius:9px;min-height:0}
+  a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  nav{position:sticky;top:0;z-index:20;background:rgba(15,13,11,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 24px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;color:var(--ink)}
+  .logo svg{width:26px;height:26px}
+  .navlinks{display:flex;align-items:center;gap:20px;font-size:14px;font-weight:600}
+  .navlinks a{color:var(--muted)}.navlinks a:hover{color:var(--ink)}
+  .navlinks a.btn-gold{color:#171310}
+  section{padding:56px 0}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  h1{font-size:clamp(32px,5vw,48px);line-height:1.08;font-weight:800;letter-spacing:-.02em;margin:0 0 14px}
+  h1 .g{color:var(--gold)}
+  h2{font-size:20px;font-weight:800;letter-spacing:-.01em;margin:0 0 6px}
+  .lead{font-size:clamp(16px,2vw,19px);color:var(--muted);max-width:60ch;margin:0 0 8px}
+  .hero{padding:56px 0 20px;text-align:center;border-bottom:1px solid var(--line);background:radial-gradient(1100px 600px at 50% -20%,#241C14 0%,var(--bg) 58%)}
+  .hero .lead{margin:0 auto}
+  .cat{max-width:820px;margin:0 auto;padding-top:8px}
+  .cat + .cat{margin-top:34px}
+  .cat h2{color:var(--gold);font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px}
+  .faq details{border:1px solid var(--line);border-radius:12px;padding:2px 18px;margin-bottom:12px;background:var(--panel)}
+  .faq summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--gold);font-weight:800;flex:none}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{margin:0 0 16px;color:var(--muted);font-size:15.5px}
+  .faq p b{color:var(--ink);font-weight:700}
+  .cta{max-width:820px;margin:44px auto 0;background:linear-gradient(180deg,#2a2113,var(--panel));border:1px solid var(--gold);border-radius:20px;padding:30px;text-align:center}
+  .cta h2{font-size:24px;margin:0 0 8px}
+  .cta .lead{margin:0 auto 20px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--faint);font-size:14px;margin-top:20px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  footer .mark{display:flex;align-items:center;gap:9px;color:var(--ink);font-weight:800}
+  footer .mark svg{width:22px;height:22px}
+  @media(max-width:820px){.navlinks a:not(.btn){display:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://getcoursed.com/#org","name":"Coursed","url":"https://getcoursed.com","logo":"https://getcoursed.com/favicon.svg","description":"Coursed is a live service scoreboard for restaurants, turning your POS order activity into real-time service visibility."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is Coursed?","acceptedAnswer":{"@type":"Answer","text":"Coursed is a live service scoreboard for restaurants. It reads your POS order activity and turns it into a real-time view of every table, scored on a six-step service ladder, so managers can spot service gaps, recover slipping tables, and coach from the actual shift."}},
+{"@type":"Question","name":"Which POS does Coursed work with?","acceptedAnswer":{"@type":"Answer","text":"Coursed connects to Toast today, with more POS integrations on the way. When you apply for a pilot we ask which POS you use so we can tell you exactly where you stand and, if needed, add you to the waitlist for your system."}},
+{"@type":"Question","name":"Do my servers have to do anything differently?","acceptedAnswer":{"@type":"Answer","text":"No. Coursed reads what your team already rings in. There's nothing to install on your terminals and no new steps for staff mid-shift."}},
+{"@type":"Question","name":"Can I run it on more than one screen?","acceptedAnswer":{"@type":"Answer","text":"Yes. A live board on the pass for the team, and a manager view in the back for reports, history, and coaching. A view-only floor screen is available too."}},
+{"@type":"Question","name":"How does the connection work?","acceptedAnswer":{"@type":"Answer","text":"A read-only connection through your POS's standard API, set up with our team on a short onboarding call — about 30 minutes, most of it on the call. You never touch a config file."}},
+{"@type":"Question","name":"What does Coursed read?","acceptedAnswer":{"@type":"Answer","text":"Open and closed orders for the current business date, line items and modifiers, guest counts and check totals, and menu, table, and employee reference data to label the board."}},
+{"@type":"Question","name":"What does Coursed never do?","acceptedAnswer":{"@type":"Answer","text":"It never changes a ticket, price, or menu; never touches payments or card data; adds no workflow for servers; and can be revoked at any time from your own POS account."}},
+{"@type":"Question","name":"How long does setup take?","acceptedAnswer":{"@type":"Answer","text":"Usually live on your floor the same afternoon. Onboarding is white-glove and takes about 30 minutes."}},
+{"@type":"Question","name":"Do you touch payments or card data?","acceptedAnswer":{"@type":"Answer","text":"No. Coursed does not process, transmit, or store payment or cardholder data. It reads order activity — items, timing, guest counts, check totals — not payment instruments."}},
+{"@type":"Question","name":"Where is my data stored, and is it secure?","acceptedAnswer":{"@type":"Answer","text":"Your API credentials are encrypted at rest and sessions are signed. Coursed stores the computed service board and rolled-up reporting so you can look back across shifts. We don't sell your data or share it with third parties."}},
+{"@type":"Question","name":"How much does Coursed cost?","acceptedAnswer":{"@type":"Answer","text":"Coursed Pro is $199 to $249 per location per month, billed monthly; your exact rate is confirmed at onboarding based on location count and volume. Multi-location groups get custom pricing."}},
+{"@type":"Question","name":"Are the live board and Pace alerts included?","acceptedAnswer":{"@type":"Answer","text":"Yes. The live service board and Pace service-gap alerts are both part of Coursed Pro at no extra charge — not add-ons."}},
+{"@type":"Question","name":"Do I need a credit card to start?","acceptedAnswer":{"@type":"Answer","text":"No. You apply for a pilot and connect your POS with our team first. You only subscribe after your 30-day pilot, if Coursed earns its place on your pass."}},
+{"@type":"Question","name":"What are the pilot terms?","acceptedAnswer":{"@type":"Answer","text":"A 30-day, no-card trial on your own service data. Pilot terms are separate from subscription pricing, and the pilot does not promise specific results — it lets you judge Coursed on your real service before you commit."}},
+{"@type":"Question","name":"Who built Coursed?","acceptedAnswer":{"@type":"Answer","text":"Coursed was built by restaurant operators and runs daily on their own restaurants. Every feature earned its place on a real service before it shipped."}}
+]}
+]}
+</script>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="/"><svg viewBox="0 0 168 160" aria-hidden="true"><path d="M116.7 92.35A50 50 0 1 1 116.7 67.65" fill="none" stroke="#F0B429" stroke-width="13" stroke-linecap="round"/><polygon points="109,64.5 110.9,69.39 116.13,69.68 112.07,73 113.41,78.07 109,75.22 104.59,78.07 105.93,73 101.87,69.68 107.1,69.39" fill="#F0B429"/></svg>Coursed</a>
+  <div class="navlinks">
+    <a href="/">Home</a>
+    <a href="/pricing">Pricing</a>
+    <a href="/faq">FAQ</a>
+    <a class="btn btn-gold btn-sm" href="/?src=faq#pilot" data-cta="pilot-nav-faq">Apply for a pilot</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">Questions &amp; answers</div>
+  <h1>Frequently asked <span class="g">questions.</span></h1>
+  <p class="lead">Straight answers on what Coursed does, how it connects to your POS, what it reads and never changes, security, and how pricing and the pilot work.</p>
+</div></header>
+
+<section><div class="wrap"><div class="faq">
+
+  <div class="cat">
+    <h2>The product</h2>
+    <details><summary>What is Coursed?</summary><p>Coursed is a <b>live service scoreboard for restaurants</b>. It reads your POS order activity and turns it into a real-time view of every table, scored on a six-step service ladder — so managers can spot service gaps, recover slipping tables, and coach from the actual shift.</p></details>
+    <details><summary>Which POS does Coursed work with?</summary><p>Coursed connects to <b>Toast today</b>, with more POS integrations on the way. When you apply for a pilot we ask which POS you use, so we can tell you exactly where you stand and — if we're not on your system yet — add you to the waitlist for it.</p></details>
+    <details><summary>Do my servers have to do anything differently?</summary><p>No. Coursed reads what your team already rings in. There's nothing to install on your terminals and no new steps for staff mid-shift.</p></details>
+    <details><summary>Can I run it on more than one screen?</summary><p>Yes. Run a <b>live board on the pass</b> for the team and a <b>manager view</b> in the back for reports, history, and coaching. A view-only floor screen is available too.</p></details>
+  </div>
+
+  <div class="cat">
+    <h2>Connecting your POS</h2>
+    <details><summary>How does the connection work?</summary><p>A <b>read-only connection</b> through your POS's standard API, set up with our team on a short onboarding call — about 30 minutes, most of it on the call. You never touch a config file.</p></details>
+    <details><summary>What does Coursed read?</summary><p>Open and closed orders for the current business date, line items and modifiers, guest counts and check totals, and menu, table, and employee reference data to label the board with real names.</p></details>
+    <details><summary>What does Coursed never do?</summary><p>It <b>never changes a ticket, price, or menu</b>; never touches payments or card data; adds no workflow for servers; and can be revoked at any time from your own POS account.</p></details>
+    <details><summary>How long does setup take?</summary><p>Usually live on your floor the same afternoon. Onboarding is white-glove and takes about 30 minutes.</p></details>
+  </div>
+
+  <div class="cat">
+    <h2>Security &amp; data</h2>
+    <details><summary>Do you touch payments or card data?</summary><p>No. Coursed does not process, transmit, or store payment or cardholder data. It reads order activity — items, timing, guest counts, check totals — not payment instruments.</p></details>
+    <details><summary>Where is my data stored, and is it secure?</summary><p>Your API credentials are <b>encrypted at rest</b> and sessions are signed. Coursed stores the computed service board and rolled-up reporting so you can look back across shifts. We don't sell your data or share it with third parties.</p></details>
+    <details><summary>Can I revoke access?</summary><p>Yes — at any time, from your own POS account. The connection is read-only and fully under your control.</p></details>
+  </div>
+
+  <div class="cat">
+    <h2>Pricing &amp; pilot</h2>
+    <details><summary>How much does Coursed cost?</summary><p><b>Coursed Pro is $199–$249 per location per month</b>, billed monthly; your exact rate is confirmed at onboarding based on location count and volume. Multi-location groups get custom pricing. <a href="/pricing">See full pricing →</a></p></details>
+    <details><summary>Are the live board and Pace alerts included?</summary><p>Yes. The live service board and Pace service-gap alerts are both part of Coursed Pro at no extra charge — <b>not add-ons</b>.</p></details>
+    <details><summary>Do I need a credit card to start?</summary><p>No. You apply for a pilot and connect your POS with our team first. You only subscribe after your 30-day pilot, if Coursed earns its place on your pass.</p></details>
+    <details><summary>What are the pilot terms?</summary><p>A <b>30-day, no-card trial</b> on your own service data. Pilot terms are separate from subscription pricing, and the pilot does not promise specific results — it lets you judge Coursed on your real service before you commit.</p></details>
+  </div>
+
+  <div class="cat">
+    <h2>About</h2>
+    <details><summary>Who built Coursed?</summary><p>Coursed was built by <b>restaurant operators</b> and runs daily on their own restaurants. Every feature earned its place on a real service before it shipped.</p></details>
+  </div>
+
+</div>
+
+<div class="cta">
+  <div class="eyebrow" style="color:var(--gold)">Still have a question?</div>
+  <h2>See it on your own floor.</h2>
+  <p class="lead">Apply for a 30-day pilot on your own service data, or email us and we'll answer anything.</p>
+  <div class="cta-row">
+    <a class="btn btn-gold" href="/?src=faq#pilot" data-cta="pilot-faq">Apply for a pilot</a>
+    <a class="btn btn-ghost" href="mailto:support@getcoursed.com" data-cta="email-faq">Email support@getcoursed.com</a>
+  </div>
+</div>
+</div></section>
+
+<footer><div class="wrap">
+  <a class="mark" href="/"><svg viewBox="0 0 168 160" aria-hidden="true"><path d="M116.7 92.35A50 50 0 1 1 116.7 67.65" fill="none" stroke="#F0B429" stroke-width="13" stroke-linecap="round"/><polygon points="109,64.5 110.9,69.39 116.13,69.68 112.07,73 113.41,78.07 109,75.22 104.59,78.07 105.93,73 101.87,69.68 107.1,69.39" fill="#F0B429"/></svg>Coursed</a>
+  <span>© 2026 Coursed · <a href="/terms">Terms</a> · <a href="/privacy">Privacy</a> · <a href="/faq">FAQ</a> · <a href="mailto:support@getcoursed.com">Support</a></span>
+</div></footer>
+
+<script>
+  function track(name,meta){try{meta=meta||{};window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:name},meta));if(typeof window.gtag==='function')window.gtag('event',name,meta);}catch(_){}}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-cta]');if(a)track('cta_click',{cta:a.getAttribute('data-cta')});});
+</script>
+</body></html>
