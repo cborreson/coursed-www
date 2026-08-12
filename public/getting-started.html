@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://getcoursed.com/getting-started">
+<title>Coursed — Operator Onboarding</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#0F0D0B;      /* Night Service */
+    --gold:#F0B429;       /* Course Gold */
+    --porcelain:#FAF7F2;
+    --linen:#F1EBE0;
+    --walnut:#5B4A3A;
+    --ink:#1C1917;
+    --muted:#7A7168;
+    --line:#E7DFD3;
+    --green:#2F7D57;
+    --red:#C0492F;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);background:var(--porcelain);line-height:1.55;
+    font-feature-settings:"tnum" 1;
+  }
+  .wrap{max-width:820px;margin:0 auto;padding:0 22px}
+  a{color:var(--walnut)}
+
+  /* Header */
+  header{background:var(--night);color:#fff;padding:46px 0 40px}
+  .brand{display:flex;align-items:center;gap:13px;margin-bottom:26px}
+  .brand svg{display:block}
+  .brand b{font-weight:800;font-size:19px;letter-spacing:.2px}
+  header h1{font-size:38px;line-height:1.1;margin:0 0 10px;font-weight:800;letter-spacing:-.5px}
+  header p{font-size:17px;color:#D8CFC2;margin:0;max-width:56ch}
+  .kick{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+
+  /* TOC */
+  .toc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:-26px auto 40px;max-width:820px;box-shadow:0 10px 30px rgba(15,13,11,.06)}
+  .toc h2{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin:0 0 12px;font-weight:700}
+  .toc ol{margin:0;padding-left:20px;columns:2;column-gap:34px}
+  .toc li{margin:5px 0;font-size:14.5px}
+  .toc a{color:var(--ink);text-decoration:none;font-weight:600}
+  .toc a:hover{color:var(--walnut)}
+
+  section{margin:0 0 42px}
+  h2.sec{font-size:13px;letter-spacing:1.4px;text-transform:uppercase;color:var(--gold);font-weight:800;margin:0 0 6px}
+  h3.step{font-size:25px;font-weight:800;letter-spacing:-.3px;margin:2px 0 14px;color:var(--night)}
+  p{margin:0 0 14px;font-size:16px}
+  .lead{font-size:17.5px;color:var(--ink)}
+
+  .step-num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--night);color:var(--gold);font-weight:800;font-size:15px;margin-right:10px;vertical-align:2px}
+
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:16px 0}
+  .card.gold{border-left:4px solid var(--gold)}
+  .card h4{margin:0 0 8px;font-size:16px;font-weight:800}
+
+  ul.clean{margin:6px 0 14px;padding-left:20px}
+  ul.clean li{margin:7px 0;font-size:16px}
+  ul.clean li b{font-weight:700}
+
+  .note{background:var(--linen);border-radius:12px;padding:14px 18px;font-size:14.5px;color:var(--walnut);margin:14px 0}
+  .note b{color:var(--night)}
+
+  .pill{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--night);color:var(--gold);margin-left:8px;vertical-align:2px}
+  .pill.pro{background:#2A2320}
+  .pill.grp{background:var(--walnut);color:#fff}
+
+  /* Board legend chips */
+  .legend{display:grid;grid-template-columns:1fr;gap:10px;margin:14px 0}
+  .legend .row{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:11px;padding:12px 15px}
+  .glyph{flex:none;width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px}
+  .g-stars{background:#1a1714;color:var(--gold)}
+  .g-warn{background:#FBEFD2;color:#8a6d12}
+  .g-red{background:#F6E0DA;color:var(--red)}
+  .g-gold{background:var(--gold);color:var(--night)}
+  .legend .row div p{margin:0;font-size:14.5px}
+  .legend .row div b{font-size:15px}
+
+  /* Plans table */
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{background:var(--night);color:#fff;font-weight:700;font-size:13px;letter-spacing:.3px}
+  td b{font-weight:700}
+  tr:last-child td{border-bottom:none}
+  .price{white-space:nowrap;font-weight:800;color:var(--night)}
+  .yr{color:var(--muted);font-weight:600;font-size:13px}
+
+  .checklist{list-style:none;padding:0;margin:10px 0}
+  .checklist li{position:relative;padding:8px 0 8px 30px;font-size:16px;border-bottom:1px solid var(--line)}
+  .checklist li:last-child{border-bottom:none}
+  .checklist li:before{content:"";position:absolute;left:0;top:12px;width:16px;height:16px;border:2px solid var(--gold);border-radius:4px}
+
+  footer{background:var(--night);color:#CFC6B9;padding:34px 0;font-size:14px;margin-top:20px}
+  footer a{color:var(--gold);text-decoration:none}
+  footer .brand b{color:#fff}
+  hr.soft{border:none;border-top:1px solid var(--line);margin:34px 0}
+  .small{font-size:13.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden="true">
+        <ellipse cx="24" cy="34" rx="20" ry="7" fill="none" stroke="#F0B429" stroke-width="2.4"/>
+        <ellipse cx="24" cy="34" rx="11" ry="3.6" fill="none" stroke="#F0B429" stroke-width="1.6" opacity=".55"/>
+        <path d="M13 20l1.6 3.4 3.7.4-2.8 2.5.8 3.6L13 30.5 9.9 32.4l.8-3.6-2.8-2.5 3.7-.4z" fill="#F0B429"/>
+        <path d="M24 14l1.9 4 4.3.5-3.2 2.9.9 4.2L24 24.3l-3.6 2.2.9-4.2-3.2-2.9 4.3-.5z" fill="#F0B429"/>
+        <path d="M35 9l2.2 4.6 5 .6-3.7 3.3 1 4.8L35 23.6l-4.2 2.5 1-4.8-3.7-3.3 5-.6z" fill="#F0B429"/>
+      </svg>
+      <b>Coursed</b>
+    </div>
+    <span class="kick">Operator Onboarding</span>
+    <h1>Get your restaurant live on Coursed</h1>
+    <p>Everything you need to go from pilot kickoff to a service board your whole team reads on the floor — usually about 30 minutes of setup, most of it done with you.</p>
+  </div>
+</header>
+
+<div class="toc">
+  <h2>What's inside</h2>
+  <ol>
+    <li><a href="#what">What Coursed is</a></li>
+    <li><a href="#before">Before you begin</a></li>
+    <li><a href="#s1">1 · Start your pilot</a></li>
+    <li><a href="#s2">2 · Connect your POS</a></li>
+    <li><a href="#s3">3 · Put the board on the floor</a></li>
+    <li><a href="#kiosk">Kiosk mode (wall display)</a></li>
+    <li><a href="#s4">4 · Set your service standard</a></li>
+    <li><a href="#s5">5 · Categorize your menu</a></li>
+    <li><a href="#s6">6 · Pace alerts</a></li>
+    <li><a href="#reading">Reading the board</a></li>
+    <li><a href="#reports">Reports</a></li>
+    <li><a href="#multi">Multiple locations</a></li>
+    <li><a href="#help">Pricing, billing &amp; help</a></li>
+  </ol>
+</div>
+
+<div class="wrap">
+
+  <section id="what">
+    <h2 class="sec">The idea</h2>
+    <h3 class="step">What Coursed is</h3>
+    <p class="lead">Coursed is a live, per-table view of your dining room. It reads your POS order data and scores every table in real time against a six-step service ladder built from your own hospitality standard — first round, apps, second round, entrées, third round, dessert.</p>
+    <p>The point isn't to push checks. It's to make your standard visible while there's still time to act: you can see the table that's slipping and fix it <em>at the table</em>, not at closeout. Good hospitality is good business — the check follows.</p>
+  </section>
+
+  <section id="before">
+    <h2 class="sec">Prep</h2>
+    <h3 class="step">Before you begin</h3>
+    <p>Have these ready and setup goes quickly:</p>
+    <ul class="clean">
+      <li><b>Your POS.</b> Coursed reads live order data from your point-of-sale. You'll need admin access, or someone on your team who has it — we'll confirm your specific POS when we set up the connection.</li>
+      <li><b>A screen for the floor.</b> Any TV, tablet, or spare laptop that can open a web browser and stay on during service. This becomes your service board.</li>
+      <li><b>Your service standard in mind.</b> Roughly when a table should have its first round, apps, entrées, and so on. Sensible defaults are built in — you tune them in Step 4.</li>
+      <li><b>About 30 minutes.</b> Most of it is done together with the Coursed team on your first call.</li>
+    </ul>
+  </section>
+
+  <hr class="soft">
+
+  <section id="s1">
+    <h2 class="sec">Step one</h2>
+    <h3 class="step"><span class="step-num">1</span>Sign up &amp; pick a plan</h3>
+    <p>Coursed starts with a <b>30-day pilot</b>, not a checkout — you run the full product on your own service data before you ever pay. Apply at <b>getcoursed.com</b> and the Coursed team reaches out to get you set up. <b>No card required to begin.</b></p>
+    <p>Once you’re set up, your restaurant gets its own board address — <b>yourname.getcoursed.com</b>. At the end of the 30 days you decide whether to subscribe; see <a href="#help">Pricing, billing &amp; help</a> for what it costs.</p>
+    <div class="note"><b>Multiple locations?</b> Don't sign each one up separately — see <a href="#multi">Multiple locations</a> so they roll up under one account with a single login.</div>
+  </section>
+
+  <section id="s2">
+    <h2 class="sec">Step two</h2>
+    <h3 class="step"><span class="step-num">2</span>Connect your POS</h3>
+    <p>This is the step the Coursed team does <b>with you</b>, on your onboarding call. We connect Coursed to your POS and authorize it to read your order data — nothing else. Coursed only ever <em>reads</em> orders; it can't change tickets, prices, or anything in your POS.</p>
+    <p>Once connected, your board starts building automatically. Data flows in on a live cycle throughout service, so you don't touch anything to keep it current.</p>
+    <div class="note"><b>What we need from you:</b> a few minutes with your POS admin to authorize the connection. We'll walk you through exactly where to click.</div>
+  </section>
+
+  <section id="s3">
+    <h2 class="sec">Step three</h2>
+    <h3 class="step"><span class="step-num">3</span>Put the board on the floor</h3>
+    <p>Open <b>yourname.getcoursed.com</b> on the screen you picked, and log in with the board password we set up together. That's it — the board is live.</p>
+    <ul class="clean">
+      <li><b>Pick a density.</b> Toggle between <b>Full</b>, <b>Compact</b>, and <b>Mini</b> depending on how big your screen is and how many tables you run. Mini is the usual choice for a wall-mounted kiosk.</li>
+      <li><b>Filter the view.</b> Show <b>Open</b>, <b>Trouble</b>, or <b>Closed</b> tables to focus on what needs attention right now.</li>
+      <li><b>Leave it on.</b> The board refreshes itself. Set the screen to stay awake during service and you can forget about it.</li>
+    </ul>
+    <div class="note"><b>Tip:</b> the login is remembered on that screen, so the kiosk stays signed in between shifts.</div>
+  </section>
+
+  <section id="kiosk">
+    <h2 class="sec">Wall display</h2>
+    <h3 class="step">Kiosk mode — full-screen &amp; always-on</h3>
+    <p>For a tablet mounted on the wall or the pass, lock it to the board so it runs edge-to-edge, never sleeps, and can't be swiped away from during service. Works on any recent iPad or Android tablet.</p>
+    <p><b>First, sign the tablet in once.</b> The cleanest way is a <b>floor kiosk link</b>: from a manager login, open <b>Scoring → Floor access → Generate kiosk link</b>, then open that link on the tablet. It signs the screen in as a <em>view-only floor board</em> — no password to leave on the wall, and it can't reach your settings. (A normal board login works too; it's just remembered on that screen.) Set the density to <b>Mini</b> or <b>Compact</b> for a wall.</p>
+
+    <h3 class="step">On an iPad</h3>
+    <ul class="clean">
+      <li><b>Keep it awake.</b> Settings → Display &amp; Brightness → <b>Auto-Lock → Never</b>, and keep the iPad plugged into power.</li>
+      <li><b>Open the board.</b> In Safari, go to your board (or paste the floor kiosk link). Optional: tap <b>Share → Add to Home Screen</b> for an app icon you can tap to open.</li>
+      <li><b>Turn on Guided Access.</b> Settings → Accessibility → <b>Guided Access → On</b>, then set a passcode under Passcode Settings.</li>
+      <li><b>Lock it to the board.</b> With the board on screen, <b>triple-click the top (or side) button</b> → Guided Access → <b>Start</b>. The iPad is now locked to the board; triple-click and enter the passcode to exit.</li>
+    </ul>
+    <div class="note"><b>Permanent install?</b> For a wall tablet that runs 24/7, a dedicated kiosk-browser app like <b>Kiosk Pro</b> adds auto-reload after a Wi-Fi blip and hides every browser control — worth it for a fixed screen.</div>
+
+    <h3 class="step">On an Android tablet</h3>
+    <ul class="clean">
+      <li><b>Keep it awake.</b> Settings → Display → <b>Screen timeout</b> → the longest option (or turn on Developer options → <b>Stay awake while charging</b>). Keep it plugged in.</li>
+      <li><b>Open the board.</b> In Chrome, go to your board (or paste the floor kiosk link). Optional: menu → <b>Add to Home screen</b>.</li>
+      <li><b>Turn on screen pinning.</b> Settings → Security &amp; privacy → <b>App pinning / Screen pinning → On</b>. Open the board, open the app switcher, and pin it. Unpinning asks for your PIN, so no one can wander off the board.</li>
+    </ul>
+    <div class="note"><b>Permanent install?</b> For an always-on wall display, the free <b>Fully Kiosk Browser</b> app is the most reliable — set your board as its start URL and turn on full-screen, keep-screen-on, auto-reload, and start-on-boot.</div>
+
+    <div class="note"><b>Either device:</b> keep it on power, set the brightness for the room, make sure it stays on stable Wi-Fi, and pause automatic OS updates that could reboot the tablet mid-service.</div>
+  </section>
+
+  <section id="s4">
+    <h2 class="sec">Step four</h2>
+    <h3 class="step"><span class="step-num">4</span>Set your service standard</h3>
+    <p>Your board comes with sensible defaults, but the whole value is that it reflects <em>your</em> standard. On the settings page you can tune the six rungs of the ladder — how many drinks, when apps should land, entrée timing, dessert — per shift, since brunch and a Friday dinner aren't the same.</p>
+    <ul class="clean">
+      <li><b>The six-star ladder.</b> Each rung is a moment of service. Set the per-guest thresholds so a "perfect table" means what it means in your room.</li>
+      <li><b>Shift windows.</b> Define your service periods so timing rules apply to the right daypart.</li>
+      <li><b>Board colors.</b> <span class="pill grp">Group</span> plans can match the board to your brand.</li>
+    </ul>
+    <p class="small">Every Coursed subscription includes a fully customizable ladder and drink weighting — the built-in defaults are just a starting point.</p>
+  </section>
+
+  <section id="s5">
+    <h2 class="sec">Step five</h2>
+    <h3 class="step"><span class="step-num">5</span>Categorize your menu</h3>
+    <p>Coursed needs to know which items are <b>drinks</b>, <b>apps</b>, <b>entrées</b>, and <b>desserts</b> so it scores each rung correctly. Most items sort themselves automatically — you just review and fix the handful that don't.</p>
+    <ul class="clean">
+      <li><b>Set a whole menu group at once.</b> Instead of tagging item by item, point a menu group at a category — e.g. "Small Plates &amp; Shareables → Apps" — and every item under it follows.</li>
+      <li><b>Override individual items</b> where a single dish doesn't fit its group.</li>
+      <li><b>It sticks.</b> New items you add in your POS inherit their group's rule automatically.</li>
+    </ul>
+    <div class="note">Item categorization and drink weighting — fine-tuning how much individual drinks count toward a rung — are both part of every Coursed subscription.</div>
+  </section>
+
+  <section id="s6">
+    <h2 class="sec">Step six</h2>
+    <h3 class="step"><span class="step-num">6</span>Pace alerts <span class="pill">included</span></h3>
+    <p>Pace watches for tables falling behind — past a course deadline (plus a buffer you set) or sitting longer than your max table time — and flags them <b>red</b> on the board so a manager can step in before the guest notices. It’s built into Coursed, not a separate add-on — it’s on and ready to tune to your service.</p>
+    <p>If a flag isn't warranted — a table that's lingering happily over coffee — a manager can <b>clear the trouble flag</b> right from the table, and reinstate it later if things change.</p>
+  </section>
+
+  <hr class="soft">
+
+  <section id="reading">
+    <h2 class="sec">Day to day</h2>
+    <h3 class="step">Reading the board</h3>
+    <p>Here's what your team sees during service. It's meant to be glanceable — no training required beyond this.</p>
+    <div class="legend">
+      <div class="row">
+        <div class="glyph g-stars">★★★</div>
+        <div><b>Stars</b><p>Each table earns up to six stars as it moves up the service ladder. A table lit gold has hit every rung — your standard, met.</p></div>
+      </div>
+      <div class="row">
+        <div class="glyph g-gold">✦</div>
+        <div><b>Perfect table</b><p>A full-ladder table gets the gold treatment — worth calling out to the team.</p></div>
+      </div>
+      <div class="row">
+        <div class="glyph g-red">▲</div>
+        <div><b>Trouble flag (Pace)</b><p>A red flag means a table is behind on a course or over its time. Tap it for the fire timeline showing where it slipped. Clear it if it's a false alarm.</p></div>
+      </div>
+      <div class="row">
+        <div class="glyph g-warn">⚠</div>
+        <div><b>Low-guest flag</b><p>A gold ⚠ means more entrées than the guest count suggests — usually the cover count was under-entered, which makes the score too easy. Fix the count, or clear the flag if it's correct.</p></div>
+      </div>
+    </div>
+    <p>Tap any table to open its <b>fire timeline</b> — a play-by-play of what was ordered and when. A <b>leaderboard</b> ranks servers by how well their tables track to standard.</p>
+  </section>
+
+  <section id="reports">
+    <h2 class="sec">Look back</h2>
+    <h3 class="step">Reports</h3>
+    <p>The live board is for right now; reports are for patterns. Pull a date range to see how consistently your room hit each rung, which shifts run strong, and how servers trend over time.</p>
+    <ul class="clean">
+      <li><b>Rung completion.</b> How often tables reached each step of the ladder — met vs. available — so you can see exactly where service tends to drop off.</li>
+      <li><b>Trend over time.</b> Your average scored out of six, tracked across the range.</li>
+      <li><b>Server leaderboard.</b> Ranked by tables that met standard. Servers with too few tables to judge fairly are held out so small samples don't skew the board.</li>
+    </ul>
+    <p class="small">Reporting and historical lookback of any past date and shift are included in every Coursed subscription.</p>
+  </section>
+
+  <section id="multi">
+    <h2 class="sec">More than one room</h2>
+    <h3 class="step">Multiple locations</h3>
+    <p>If you run several venues, they roll up under a single <b>billing group</b> — one account, one login, each location billed as its own line item. You get a group address, <b>yourgroup.getcoursed.com</b>, with one password for the whole group.</p>
+    <ul class="clean">
+      <li><b>One login, every board.</b> Sign in once at your group address and switch between your locations from the board — no separate password per venue.</li>
+      <li><b>Each location keeps its own standard.</b> Scoring, shifts, and menu categories are set per location; the group just ties them together.</li>
+      <li><b>Cross-location reporting.</b> Compare venues side by side from one place.</li>
+    </ul>
+    <div class="note">Tell the Coursed team you're a group and we'll set the group up for you, add your locations, and hand you the login — you don't sign each venue up separately.</div>
+  </section>
+
+  <hr class="soft">
+
+  <section id="help">
+    <h2 class="sec">Reference</h2>
+    <h3 class="step">Pricing, billing &amp; help</h3>
+    <table>
+      <tr><th>Plan</th><th>Price</th><th>What you get</th></tr>
+      <tr>
+        <td><b>Coursed Pro</b><br><span class="small">most restaurants</span></td>
+        <td class="price">$199–249<br><span class="yr">/ location / mo</span></td>
+        <td>The whole product, one price: the live service board, <b>Pace</b> service-gap alerts, shift history, the fire timeline, the server leaderboard and coaching tools, a fully customizable service standard with drink weighting, and performance reporting. White-glove POS setup included. Your exact rate is confirmed at onboarding based on your location count and volume.</td>
+      </tr>
+      <tr>
+        <td><b>Multi-location</b><br><span class="small">groups</span></td>
+        <td class="price">Custom</td>
+        <td>Everything in Coursed Pro across every location, plus group rollup and cross-location reporting, custom board colors and branding, volume pricing, a named point of contact, and a coordinated rollout.</td>
+      </tr>
+    </table>
+    <div class="note"><b>The live board and Pace are included</b> — not upsells. One price, the whole product. You start with a 30-day pilot on your own data and only subscribe if Coursed earns its place on your pass.</div>
+    <p><b>Managing billing.</b> Visit <b>yourname.getcoursed.com/account</b> for your plan, billing status, and a button to update your card or manage your subscription. If a payment fails you'll be prompted there; the board keeps working while you sort it out.</p>
+    <p><b>Need a hand?</b> Email <a href="mailto:support@getcoursed.com">support@getcoursed.com</a> any time — setup questions, tuning your standard, adding a location, all of it.</p>
+
+    <h4 style="margin-top:26px;font-size:16px;font-weight:800">Your quick-start checklist</h4>
+    <ul class="checklist">
+      <li>Applied for your pilot at getcoursed.com</li>
+      <li>POS connected with the Coursed team</li>
+      <li>Board open and logged in on a floor screen</li>
+      <li>Service standard tuned to your room</li>
+      <li>Menu items categorized and reviewed</li>
+      <li>Pace flags tuned to your service</li>
+      <li>Team knows how to read the stars, ⚠, and red flags</li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="brand" style="margin-bottom:12px">
+      <svg width="26" height="26" viewBox="0 0 48 48" aria-hidden="true">
+        <ellipse cx="24" cy="34" rx="20" ry="7" fill="none" stroke="#F0B429" stroke-width="2.4"/>
+        <path d="M13 20l1.6 3.4 3.7.4-2.8 2.5.8 3.6L13 30.5 9.9 32.4l.8-3.6-2.8-2.5 3.7-.4z" fill="#F0B429"/>
+        <path d="M24 14l1.9 4 4.3.5-3.2 2.9.9 4.2L24 24.3l-3.6 2.2.9-4.2-3.2-2.9 4.3-.5z" fill="#F0B429"/>
+        <path d="M35 9l2.2 4.6 5 .6-3.7 3.3 1 4.8L35 23.6l-4.2 2.5 1-4.8-3.7-3.3 5-.6z" fill="#F0B429"/>
+      </svg>
+      <b>Coursed</b>
+    </div>
+    <p style="margin:0">Every table gets your best service. &nbsp;·&nbsp; <a href="mailto:support@getcoursed.com">support@getcoursed.com</a> &nbsp;·&nbsp; getcoursed.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
