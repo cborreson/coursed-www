@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://getcoursed.com/</loc></url>
-  <url><loc>https://getcoursed.com/toast</loc></url>
-  <url><loc>https://getcoursed.com/blog</loc></url>
-  <url><loc>https://getcoursed.com/blog/how-to-read-the-board</loc></url>
-  <url><loc>https://getcoursed.com/getting-started</loc></url>
-  <url><loc>https://getcoursed.com/pricing</loc></url>
-  <url><loc>https://getcoursed.com/faq</loc></url>
-  <url><loc>https://getcoursed.com/terms</loc></url>
-  <url><loc>https://getcoursed.com/privacy</loc></url>
+  <url><loc>https://getcoursed.com/</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/toast</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/blog/</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/blog/how-to-read-the-board</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/getting-started</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/pricing</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/faq</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/terms</loc><lastmod>2026-08-13</lastmod></url>
+  <url><loc>https://getcoursed.com/privacy</loc><lastmod>2026-08-13</lastmod></url>
 </urlset>
