@@ -87,18 +87,97 @@
   @media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}.navlinks a:not(.btn){display:none}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://getcoursed.com/#org","name":"Coursed","url":"https://getcoursed.com","logo":"https://getcoursed.com/favicon.svg","description":"Coursed is a live service scoreboard for Toast restaurants, turning Toast order activity into real-time service visibility."},
-{"@type":"SoftwareApplication","name":"Coursed","operatingSystem":"Web","applicationCategory":"BusinessApplication","description":"Live service scoreboard for Toast restaurants. Turns Toast order activity into a live view of every table so managers can spot service gaps, recover slipping tables, and coach from the shift.","offers":{"@type":"Offer","price":"199","priceCurrency":"USD","description":"Coursed Pro, per location per month"},"publisher":{"@id":"https://getcoursed.com/#org"}},
-{"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Does Coursed change anything in our Toast account?","acceptedAnswer":{"@type":"Answer","text":"No. The connection is read-only. Coursed reads order data to build the board and never writes to, changes, or deletes anything in Toast."}},
-{"@type":"Question","name":"Do you touch payments or card data?","acceptedAnswer":{"@type":"Answer","text":"No. Coursed does not process, transmit, or store payment or cardholder data. It reads order activity — items, timing, guest counts, check totals — not payment instruments."}},
-{"@type":"Question","name":"How is the connection authorized, and can we revoke it?","acceptedAnswer":{"@type":"Answer","text":"You authorize a read-only connection through Toast's standard API access during assisted onboarding, and you can revoke it at any time from your own Toast account."}},
-{"@type":"Question","name":"What data do you store, and for how long?","acceptedAnswer":{"@type":"Answer","text":"Coursed stores the computed service board and rolled-up reporting so you can look back across shifts. We don't sell your data or share it with third parties."}},
-{"@type":"Question","name":"Does this add work for our servers?","acceptedAnswer":{"@type":"Answer","text":"None. There's nothing to install on your terminals and no new steps for staff. The board reads what your team already rings in."}},
-{"@type":"Question","name":"Is Coursed affiliated with Toast?","acceptedAnswer":{"@type":"Answer","text":"No. Coursed is an independent product that connects to Toast through Toast's standard API. It is not affiliated with, sponsored by, or endorsed by Toast, Inc."}}
-]}
-]}
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://getcoursed.com/#org",
+   "name": "Coursed",
+   "url": "https://getcoursed.com",
+   "logo": "https://getcoursed.com/favicon.svg",
+   "description": "Coursed is a live service scoreboard for Toast restaurants, turning Toast order activity into real-time service visibility.",
+   "alternateName": "Get Coursed",
+   "disambiguatingDescription": "Coursed is restaurant front-of-house service software. It is not a training platform, an online course provider, or a reservation system. The name refers to coursed dining service - the rhythm in which courses reach a table."
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Coursed",
+   "operatingSystem": "Web",
+   "applicationCategory": "BusinessApplication",
+   "description": "Live service scoreboard for Toast restaurants. Turns Toast order activity into a live view of every table so managers can spot service gaps, recover slipping tables, and coach from the shift.",
+   "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "lowPrice": "199",
+    "highPrice": "249",
+    "offerCount": "2",
+    "availability": "https://schema.org/InStock",
+    "description": "Coursed Pro, per location per month",
+    "seller": {
+     "@id": "https://getcoursed.com/#org"
+    }
+   },
+   "publisher": {
+    "@id": "https://getcoursed.com/#org"
+   },
+   "@id": "https://getcoursed.com/#software"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Does Coursed change anything in our Toast account?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. The connection is read-only. Coursed reads order data to build the board and never writes to, changes, or deletes anything in Toast — not tickets, not prices, not the menu."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you touch payments or card data?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Coursed does not process, transmit, or store payment or cardholder data. It reads order activity (items, timing, guest counts, check totals) — not payment instruments."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How is the connection authorized, and can we revoke it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You authorize a read-only connection through Toast's standard API access during assisted onboarding, and you can revoke it at any time from your own Toast account. Your API credentials are stored encrypted at rest."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What data do you store, and for how long?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Coursed stores the computed service board and rolled-up reporting so you can look back across shifts. We don't sell your data or share it with third parties. Data-retention and deletion terms are covered in our agreement."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does this add work for our servers?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "None. There's nothing to install on your terminals and no new steps for staff. The board reads what your team already rings in."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is Coursed affiliated with Toast?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. Coursed is an independent product that connects to Toast through Toast's standard API. It is not affiliated with, sponsored by, or endorsed by Toast, Inc."
+     }
+    }
+   ]
+  }
+ ]
+}
 </script>
 </head>
 <body>
