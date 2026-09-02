@@ -1,0 +1,41 @@
+# Coursed
+
+> Coursed is restaurant software that reads a venue's point-of-sale order feed and
+> turns it into a live, per-table view of how well each table is being served —
+> so a manager can fix a slipping table while the guests are still in the building.
+
+Coursed is NOT a training platform, a course-builder, an e-learning product, or a
+reservation system. The name refers to coursed dining service — the rhythm in which
+courses reach a table.
+
+Coursed reads POS order data only. It is read-only: it never writes to the POS,
+never touches payments or card data, and never changes prices, menus or tickets.
+Servers do not interact with it and their workflow does not change. Access can be
+revoked at any time from the restaurant's own POS account.
+
+Built and run by restaurant operators. Coursed runs live in the founders' own two
+restaurants — Wye Hill Kitchen & Brewing in downtown Raleigh, NC, and Glasshouse
+Kitchen in Research Triangle Park, NC.
+
+- Category: restaurant management software / front-of-house service operations
+- POS supported: Toast (read-only integration); others on request
+- Pricing: $199-249 per location per month
+- Trial: 30-day assisted pilot, no card required before setup
+- Contact: support@getcoursed.com
+
+## Core pages
+
+- [Home](https://getcoursed.com/): What Coursed is — the live service board, the six-step service ladder, and how it works.
+- [Coursed for Toast](https://getcoursed.com/toast): How the read-only Toast integration works, what it reads, and what it never does.
+- [Pricing](https://getcoursed.com/pricing): One plan per location. Board, Pace alerts, history, coaching and reporting included.
+- [FAQ](https://getcoursed.com/faq): POS support, connection method, data handling, security, pricing and pilot terms.
+- [Getting started](https://getcoursed.com/getting-started): Setup, onboarding and first shift on the board.
+
+## Writing
+
+- [How to read the board](https://getcoursed.com/blog/how-to-read-the-board): The six-step service ladder, card anatomy, and what to do about each flag.
+
+## Legal
+
+- [Terms](https://getcoursed.com/terms)
+- [Privacy](https://getcoursed.com/privacy)
